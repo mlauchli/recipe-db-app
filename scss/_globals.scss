@@ -1,0 +1,78 @@
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: "Raleway", sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-repeat: none;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.bighero {
+	display: flex;
+	margin: 0 10%;
+}
+
+footer {
+	color: white;
+	text-align: center;
+	background-color:  rgba(227,160,104,0.8);
+	padding: 25px 0;
+}
+
+.textfade {
+	opacity: 0;
+	transition: all 2s;
+}
+
+.textfade.visible {
+	opacity: 1;
+}
+
+
+
+/*---MOBILE---*/
+
+@media screen and (min-width: 0px) and (max-width: 767px){
+	.bighero {
+	margin: 0 5%;
+	flex-direction: column;
+	}
+
+	.clear {
+	width: 60%;
+	margin: 5% auto;
+	text-align: center;
+	}
+}
+
+/*---TABLET---*/
+@media screen and (min-width: 768px) AND (max-width: 1078px) {
+
+	.bighero {
+		display: flex;
+		flex-direction: row;
+		margin: 0 5%;
+		justify-content: center;
+	}
+
+	.clear {
+		width: 60%;
+		margin: 2.5% auto;
+		text-align: center;
+	}
+}
+
+/*---DESKTOP---*/
+@media screen and (min-width: 1079px) {
+	.clear {
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+	}
+}

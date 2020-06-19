@@ -1,0 +1,18 @@
+h1, h2 {
+	color: white;
+	text-align: center;
+}
+
+/*---MOBILE---*/
+@media screen and (min-width: 0px) and (max-width: 767px){
+	h1 {
+		font-size: 1.5em;
+	}
+}
+
+/*---DESKTOP---*/
+@media screen and (min-width: 1079px) {
+	h1 {
+		font-size: 2.5em;
+	}
+}

@@ -1,0 +1,250 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.bighero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10%;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  background-color: rgba(227, 160, 104, 0.8);
+  padding: 25px 0;
+}
+
+.textfade {
+  opacity: 0;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.textfade.visible {
+  opacity: 1;
+}
+
+/*---MOBILE---*/
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .bighero {
+    margin: 0 5%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clear {
+    width: 60%;
+    margin: 5% auto;
+    text-align: center;
+  }
+}
+
+/*---TABLET---*/
+@media screen and (min-width: 768px) and (max-width: 1078px) {
+  .bighero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 5%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .clear {
+    width: 60%;
+    margin: 2.5% auto;
+    text-align: center;
+  }
+}
+
+/*---DESKTOP---*/
+@media screen and (min-width: 1079px) {
+  .clear {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+h1, h2 {
+  color: white;
+  text-align: center;
+}
+
+/*---MOBILE---*/
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+/*---DESKTOP---*/
+@media screen and (min-width: 1079px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+.mc-field-group {
+  height: 50px;
+  width: 60%;
+  margin: 1% auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.mc-field-group input {
+  height: 50px;
+  width: 100%;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0 5%;
+  border: 1px white solid;
+  caret-color: white;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.9);
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.9);
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(255, 255, 255, 0.9);
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.button {
+  height: 50px;
+  background-color: rgba(227, 160, 104, 0.8);
+  color: white;
+  border: white solid 1px;
+  font-weight: bold;
+}
+
+/*---MOBILE---*/
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  form {
+    margin: 5% 0;
+  }
+  .button {
+    width: 60%;
+  }
+}
+
+/*---DESKTOP---*/
+@media screen and (min-width: 768px) {
+  #mc_embed_signup {
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .button {
+    margin: 1% 0;
+  }
+}
+
+#logo {
+  width: 20em;
+  margin: 50px auto;
+}
+
+.socmed {
+  vertical-align: middle;
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socmed img {
+  width: 100px;
+  padding: 5% 10%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/*---GLOBALS---*/
+button .special-button {
+  background-color: white;
+  border: rgba(227, 160, 104, 0.8) 1px solid;
+  color: rgba(227, 160, 104, 0.8);
+  padding: .5em .7em;
+}
+
+/*---MOBILE---*/
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .headline {
+    font-size: 5em;
+  }
+  .byline {
+    font-size: 3em;
+  }
+  .special-button {
+    margin-top: 5%;
+  }
+}
+
+/*---TABLET---*/
+@media screen and (min-width: 768px) and (max-width: 1078px) {
+  .headline {
+    font-size: 5em;
+  }
+  .byline {
+    font-size: 2em;
+  }
+  .special-button {
+    margin-top: 2em;
+  }
+}
+
+/*---DESKTOP---*/
+@media screen and (min-width: 1079px) {
+  .jumbotron {
+    color: white;
+    background-size: cover;
+  }
+  h1.headline {
+    font-size: 8em;
+  }
+  .byline {
+    font-size: 3em;
+  }
+  button .special-button {
+    margin-top: 1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
